@@ -5,14 +5,20 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const app = express();
-const port = 3000;
+const port = 1221;
 
 let api;
 
 // Activate the API on server start
-(async () => {
-  api = await activate();
-})();
+await (async () => { 
+  try { 
+    api = await activate(); 
+    console.log('API activated:', api); 
+  } 
+    catch (error) { 
+      console.error('Failed to activate API:', error); 
+    } 
+  })();
 
 // Serve static files from the 'public' directory
 const __filename = fileURLToPath(import.meta.url);

@@ -194,6 +194,7 @@
         const bytes = BigInt(data.spacePledged);
         const pib = bytesToPiB(bytes);
         updateThermometer(pib);
+        console.log(data)
       } catch (error) {
         console.error('Error fetching spacePledged:', error);
       }

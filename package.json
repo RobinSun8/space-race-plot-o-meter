@@ -1,8 +1,12 @@
 {
+  "name": "autonomys-space-race-plotometer",
+  "version": "1.0.0",
+  "description": "Autonomys Network Space Race Plot-O-Meter",
+  "main": "server.js",
   "type": "module",
   "dependencies": {
-    "@autonomys/auto-consensus": "^0.6.5",
-    "@autonomys/auto-utils": "^0.6.5",
+    "@autonomys/auto-consensus": "^0.6.7",
+    "@autonomys/auto-utils": "^0.6.7",
     "express": "^4.21.1"
   },
   "scripts": {
